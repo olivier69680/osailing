@@ -1,0 +1,12 @@
+.home {
+    display: grid;
+    grid: {
+        template: {
+            areas: "header banner"
+                   "header main"
+                   "header footer";
+            columns: $header-width auto;
+            rows: $banner-height auto auto;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.header {
+    background-color: $color-main;
+    grid-area: header;
+
+    .logo {
+        position: sticky;
+        top: 1rem;
+    }
+
+    .menu {
+        position: sticky;
+        top: 11rem;
+    }
+}

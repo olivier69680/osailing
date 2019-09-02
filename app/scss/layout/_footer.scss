@@ -1,0 +1,9 @@
+.footer {
+    grid-area: footer;
+    margin: $gutter-extra-large;
+
+    &__text {
+        color: $color-text;
+        line-height: 1.5rem;
+    }
+}

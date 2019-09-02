@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: $gutter 0;
+    padding: 0 $gutter-large;
+
+    &__link {
+        background: {
+            image: linear-gradient(
+                to right,
+                $color-main,
+                $color-secondary
+            );
+            position: left bottom;
+            repeat: repeat-x;
+            size: 100% $border-width;
+        }
+        color: darken($color-secondary, 30%);
+        margin-bottom: $gutter;
+        padding: $gutter 0;
+        text: {
+            align: center;
+            decoration: none;
+            transform: uppercase;
+        }
+        transition: color .5s;
+
+        &:hover, &--active {
+            color: $color-secondary;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

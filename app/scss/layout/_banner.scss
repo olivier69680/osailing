@@ -1,0 +1,24 @@
+.banner {
+    background: {
+        image: url('../assets/images/vue.jpg');
+        position: center bottom;
+        size: cover;
+    }
+    grid-area: banner;
+    position: relative;
+
+    &__title {
+        bottom: $gutter-extra-large;
+        border-bottom: $border-width solid $color-text-secondary;
+        color: $color-text-secondary;
+        font: {
+            size: 3rem;
+            weight: 700;
+        }
+        left: $gutter-extra-large;
+        line-height: 5rem;
+        padding-bottom: $gutter;
+        position: absolute;
+        width: $banner-title-width;
+    }
+}
